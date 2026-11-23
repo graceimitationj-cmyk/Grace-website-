@@ -2,44 +2,37 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Grace Imitation Jewellery, Jodhpur. Discover elegant artificial jewellery and premium ladies purses.">
-<meta name="theme-color" content="#f7f1e7">
+<meta name="theme-color" content="#241b12">
+<meta name="description" content="Grace Imitation Jewellery — artificial jewellery and premium ladies purses, BJS Colony, Jodhpur.">
 <title>Grace Imitation Jewellery | Jodhpur</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-<div class="announcement">A touch of timeless elegance · Welcome to Grace</div>
+<div class="topline">A TOUCH OF TIMELESS ELEGANCE · WELCOME TO GRACE</div>
 <header class="header">
-  <a class="brand" href="#home"><span class="brand-mark">G</span><span><b>GRACE</b><small>IMITATION JEWELLERY</small></span></a>
-  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-  <nav id="nav"><a href="#home">Home</a><a href="#collections">Collections</a><a href="#story">Our Story</a><a href="#contact">Contact</a></nav>
-  <div class="header-actions"><button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button><button class="icon-btn" id="wishlistToggle" aria-label="Wishlist">♡ <span id="wishCount">0</span></button><button class="cart-btn" id="cartToggle">Bag <span id="cartCount">0</span></button></div>
+ <a class="brand" href="#"><span class="brandmark">G</span><span><b>GRACE</b><small>IMITATION JEWELLERY</small></span></a>
+ <button class="mobile-menu" id="mobileMenu">☰</button>
+ <nav id="nav"><a href="#home">Home</a><a href="#collections">Collections</a><a href="#products">Shop</a><a href="#about">Our Story</a><a href="#contact">Contact</a></nav>
+ <div class="actions"><button class="text-btn" id="accountBtn">Login</button><button class="bag" id="cartBtn">Bag <span id="cartCount">0</span></button></div>
 </header>
 <main>
-<section class="hero" id="home">
- <div class="hero-copy"><span class="eyebrow">THE ART OF ELEGANCE</span><h1>Jewellery that<br><em>tells your story.</em></h1><p>Discover graceful details, timeless sparkle and statement accessories made for your every moment.</p><a class="gold-button" href="#collections">Explore Collection <span>→</span></a><div class="hero-note"><span>✦</span> Curated with love in Jodhpur</div></div>
- <div class="hero-visual"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85" alt="Elegant gold jewellery styling"><div class="visual-caption"><small>THE GRACE EDIT</small><b>Everyday heirlooms</b></div></div>
-</section>
-<div class="trust-strip"><span>✧ Thoughtfully Curated</span><span>✧ Elegant Everyday Style</span><span>✧ Personal WhatsApp Ordering</span></div>
-<section class="section" id="collections"><div class="section-heading"><div><span class="eyebrow">DISCOVER YOUR STYLE</span><h2>Shop the collections</h2></div><p>Little details. Lasting impressions.</p></div>
- <div class="category-grid">
-  <a class="category-card" href="#products" data-filter="Earrings"><img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=700&q=85" alt="Earrings"><span>Earrings</span></a>
-  <a class="category-card" href="#products" data-filter="Necklace Sets"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=85" alt="Necklace"><span>Necklace Sets</span></a>
-  <a class="category-card" href="#products" data-filter="Bangles"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=85" alt="Bangles"><span>Bangles</span></a>
-  <a class="category-card" href="#products" data-filter="Ladies Purses"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=85" alt="Ladies purse"><span>Ladies Purses</span></a>
- </div>
-</section>
-<section class="section products-section" id="products"><div class="section-heading"><div><span class="eyebrow">A FEW GRACE FAVOURITES</span><h2>Featured pieces</h2></div><div class="filters"><input id="searchInput" placeholder="Search collection..." aria-label="Search products"><select id="categoryFilter"><option value="All">All categories</option><option>Earrings</option><option>Necklace Sets</option><option>Bangles</option><option>Ladies Purses</option></select></div></div><div class="product-grid" id="productGrid"></div></section>
-<section class="editorial"><div class="editorial-image"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=85" alt="Gold accessories"></div><div class="editorial-copy"><span class="eyebrow">MADE FOR YOUR MOMENTS</span><h2>A little glow.<br><em>A lot of grace.</em></h2><p>From everyday favourites to festive statements, find pieces that make every outfit feel a little more special.</p><a href="#products" class="under-link">Find your favourite <span>↗</span></a></div></section>
-<section class="story section" id="story"><span class="eyebrow">THE GRACE STORY</span><h2>Elegance, with a personal touch.</h2><p>Grace Imitation Jewellery brings together beautiful artificial jewellery and premium ladies purses for women who love expressing their own style. Visit us in BJS Colony, Jodhpur, or connect with us directly.</p></section>
-<section class="contact section" id="contact"><span class="eyebrow">WE WOULD LOVE TO SEE YOU</span><h2>Visit Grace</h2><p>Gali No. 19, Hanuwant B Road, BJS Colony,<br>Jodhpur, Rajasthan, India</p><div class="contact-links"><a class="gold-button" href="https://wa.me/919079394754" target="_blank">WhatsApp us ↗</a><a href="tel:9079394754">Call 9079394754</a><a href="https://instagram.com/grace_creation_bjs" target="_blank">Instagram @grace_creation_bjs ↗</a></div></section>
+<section class="hero" id="home"><div class="hero-copy"><span class="eyebrow">THE ART OF ELEGANCE</span><h1>Jewellery that<br><em>tells your story.</em></h1><p>Discover graceful details, timeless sparkle and statement accessories made for your every moment.</p><a class="gold-btn" href="#products">Explore Collection <span>→</span></a><div class="hero-note">✦ CURATED WITH LOVE IN JODHPUR</div></div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=85" alt="Elegant jewellery"><div class="photo-label"><small>THE GRACE EDIT</small><b>Everyday heirlooms</b></div></div></section>
+<div class="promise"><span>✧ THOUGHTFULLY CURATED</span><span>✧ ELEGANT EVERYDAY STYLE</span><span>✧ SECURE ORDER RECORDS</span></div>
+<section class="section" id="collections"><div class="section-head"><div><span class="eyebrow">DISCOVER YOUR STYLE</span><h2>Shop the collections</h2></div><p>Little details. Lasting impressions.</p></div><div id="categoryTiles" class="category-grid"></div></section>
+<section class="section shop" id="products"><div class="section-head"><div><span class="eyebrow">A FEW GRACE FAVOURITES</span><h2>Featured pieces</h2></div><div class="filters"><input id="search" placeholder="Search products"><select id="categoryFilter"><option value="">All categories</option></select></div></div><div id="productGrid" class="product-grid"><p>Loading collection…</p></div></section>
+<section class="editorial" id="about"><div class="editorial-photo"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=85" alt="Jewellery details"></div><div class="editorial-copy"><span class="eyebrow">THE GRACE STORY</span><h2>A little glow.<br><em>A lot of grace.</em></h2><p>Grace Imitation Jewellery brings together beautiful artificial jewellery and premium ladies purses for women who love expressing their own style.</p><a class="underlink" href="#contact">Visit our store ↗</a></div></section>
+<section class="contact section" id="contact"><span class="eyebrow">WE WOULD LOVE TO SEE YOU</span><h2>Visit Grace</h2><p>Gali No. 19, Hanuwant B Road, BJS Colony,<br>Jodhpur, Rajasthan, India</p><div class="contact-actions"><a class="gold-btn" href="https://wa.me/919079394754" target="_blank" rel="noopener">WhatsApp us ↗</a><a href="tel:9079394754">Call 9079394754</a><a href="https://instagram.com/grace_creation_bjs" target="_blank" rel="noopener">Instagram ↗</a></div></section>
 </main>
-<footer><a class="brand footer-brand" href="#home"><span class="brand-mark">G</span><span><b>GRACE</b><small>IMITATION JEWELLERY</small></span></a><p>Gali No. 19, Hanuwant B Road, BJS Colony, Jodhpur</p><small>© <span id="year"></span> Grace Imitation Jewellery. All rights reserved.</small></footer>
-<div class="overlay" id="overlay"></div>
-<aside class="drawer" id="cartDrawer"><div class="drawer-head"><h3>Your shopping bag</h3><button class="close" data-close>×</button></div><div id="cartItems"></div><div class="drawer-bottom"><div class="total-line"><span>Subtotal</span><b id="cartTotal">₹0</b></div><button class="gold-button full" id="checkoutBtn">Order on WhatsApp ↗</button><small>Order details will be sent to Grace on WhatsApp. Payment is arranged directly with the shop.</small></div></aside>
-<aside class="drawer" id="wishlistDrawer"><div class="drawer-head"><h3>Your wishlist</h3><button class="close" data-close>×</button></div><div id="wishItems"></div></aside>
-<div class="modal" id="productModal"><div class="modal-card"><button class="close" data-close>×</button><img id="modalImage" alt=""><div><span class="eyebrow">GRACE COLLECTION</span><h2 id="modalName"></h2><p id="modalDesc"></p><b id="modalPrice"></b><button class="gold-button full" id="modalAdd">Add to bag</button></div></div></div>
+<footer><div class="brand footer-brand"><span class="brandmark">G</span><span><b>GRACE</b><small>IMITATION JEWELLERY</small></span></div><p>Gali No. 19, Hanuwant B Road, BJS Colony, Jodhpur</p><div class="footer-links"><a href="#privacy" data-policy="privacy">Privacy Policy</a><a href="#terms" data-policy="terms">Terms & Conditions</a><a href="#refund" data-policy="refund">Return & Refund Policy</a><a href="https://instagram.com/grace_creation_bjs" target="_blank" rel="noopener">Instagram</a></div><small>© <span id="year"></span> Grace Imitation Jewellery. All rights reserved.</small></footer>
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="cartDrawer"><div class="drawer-head"><h3>Your shopping bag</h3><button class="x" data-close>×</button></div><div id="cartItems" class="drawer-body"></div><div class="drawer-foot"><div class="total"><span>Total</span><b id="cartTotal">₹0</b></div><button class="gold-btn wide" id="checkoutBtn">Proceed to checkout</button><small>UPI payment is initiated using your UPI app. Payment is confirmed by the shop after checking the transaction.</small></div></aside>
+<div class="modal" id="accountModal"><div class="modal-card"><button class="x" data-close>×</button><h2 id="authTitle">Customer login</h2><p class="muted">Sign in to view your orders or create an account.</p><form id="authForm"><input type="email" id="authEmail" placeholder="Email address" required><input type="password" id="authPassword" placeholder="Password" required minlength="6"><input id="authName" placeholder="Your name (for new account)" class="hidden"><button class="gold-btn wide" id="authSubmit">Login</button></form><div class="auth-links"><button id="authSwitch">Create account</button><button id="forgotBtn">Forgot password?</button></div><p id="authMessage" class="message"></p></div></div>
+<div class="modal" id="checkoutModal"><div class="modal-card"><button class="x" data-close>×</button><h2>Complete your order</h2><form id="checkoutForm"><input id="customerName" placeholder="Full name" required><input id="customerPhone" placeholder="Mobile number" required><textarea id="customerAddress" placeholder="Delivery address" required></textarea><label class="checkline"><input type="checkbox" id="payNow" checked> Pay using UPI now</label><button class="gold-btn wide">Place order</button></form><p class="muted tiny">Your order is saved when backend setup is complete. UPI payment is not automatically verified.</p></div></div>
+<div class="modal" id="policyModal"><div class="modal-card policy-card"><button class="x" data-close>×</button><h2 id="policyTitle"></h2><div id="policyText" class="policy-text"></div></div></div>
+<div class="modal" id="adminModal"><div class="modal-card admin-card"><button class="x" data-close>×</button><h2>Grace Admin Dashboard</h2><p id="adminIdentity" class="muted"></p><div class="admin-tabs"><button data-tab="products">Products</button><button data-tab="categories">Categories</button><button data-tab="orders">Orders</button><button data-tab="admins">Admins</button><button data-tab="backup">Backup</button><button data-tab="settings">Settings</button></div><div id="adminContent"></div></div></div>
+<div class="toast" id="toast"></div>
 <script src="app.js"></script>
 </body></html>
